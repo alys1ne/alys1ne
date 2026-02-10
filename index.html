@@ -179,9 +179,9 @@ nav.scrolled { background: rgba(5,5,5,0.97); backdrop-filter: blur(20px); -webki
 .contact-value { font-size: 1rem; color: var(--white); }
 .contact-value a { color: var(--white); text-decoration: none; border-bottom: 1px solid rgba(200,164,78,0.3); transition: border-color 0.3s; }
 .contact-value a:hover { border-color: var(--gold); }
-.contact-socials { display: flex; gap: 1.5rem; margin-top: 2rem; }
-.social-link { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.3s; padding-bottom: 2px; border-bottom: 1px solid transparent; }
-.social-link:hover { color: var(--gold); border-bottom-color: var(--gold-dim); }
+.contact-socials { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.social-link { font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-dim); text-decoration: none; transition: color 0.3s; padding: 0.6rem 1rem; border: 1px solid rgba(200,164,78,0.25); display: inline-block; }
+.social-link:hover { color: var(--gold); border-color: var(--gold); }
 .contact-legal { display: flex; flex-direction: column; justify-content: flex-end; }
 .contact-legal p { font-size: 0.8rem; color: var(--gray); line-height: 1.7; }
 .contact-legal .company { font-size: 0.7rem; letter-spacing: 0.1em; color: var(--gray); margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(200,164,78,0.08); }
@@ -258,11 +258,14 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
     <p class="section-label">002 — Recognition</p>
     <h2 class="section-title">Awards & <em>Selections</em></h2>
     <div class="awards-grid">
-      <div class="card">
+      <div class="card" style="text-align:center;">
+        <a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener" style="text-decoration:none;">
+          <img src="award-laurel.png" alt="Award of Excellence — One-Reeler Short Film Competition" style="width:100%;max-width:260px;margin:0 auto 1.5rem;display:block;">
+        </a>
         <div class="award-year">2025</div>
         <div class="award-name">Award of Excellence</div>
         <div class="award-detail">One-Reeler Short Film Competition<br>Los Angeles, USA</div>
-        <div class="badge">Winner</div>
+        <a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener" class="badge" style="text-decoration:none;">View Award →</a>
       </div>
       <div class="card">
         <div class="award-year">2026</div>
@@ -389,7 +392,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
     <div class="cta-box">
       <h4>Partnership Inquiries</h4>
       <p>Interested in supporting AI-driven cinema that matters?</p>
-      <a href="mailto:ronny.nollet@telenet.be?subject=ALYS1NE%20Partnership%20Inquiry" class="cta-btn">Get in Touch</a>
+      <a href="/cdn-cgi/l/email-protection#85f7eaebebfcabebeae9e9e0f1c5f1e0e9e0ebe0f1abe7e0baf6f0e7efe0e6f1b8c4c9dcd6b4cbc0a0b7b5d5e4f7f1ebe0f7f6edecf5a0b7b5ccebf4f0ecf7fc" class="cta-btn">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -403,7 +406,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
     <div class="contact-content">
       <div class="contact-info">
         <h3>Ronny Nollet</h3>
-        <div class="contact-line"><span class="contact-label">Email</span><span class="contact-value"><a href="mailto:ronny.nollet@telenet.be">ronny.nollet@telenet.be</a></span></div>
+        <div class="contact-line"><span class="contact-label">Email</span><span class="contact-value"><a href="/cdn-cgi/l/email-protection#87f5e8e9e9fea9e9e8ebebe2f3c7f3e2ebe2e9e2f3a9e5e2"><span class="__cf_email__" data-cfemail="76041918180f5818191a1a13023602131a13181302581413">[email&#160;protected]</span></a></span></div>
         <div class="contact-line"><span class="contact-label">Phone</span><span class="contact-value"><a href="tel:+32475451473">+32 475 45 14 73</a></span></div>
         <div class="contact-line"><span class="contact-label">Location</span><span class="contact-value">Antwerp, Belgium</span></div>
         <div class="contact-socials">
@@ -426,7 +429,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
 </footer>
 
 <!-- ============================================= JS ============================================= -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
 document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')));
@@ -438,16 +441,4 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
      SECTION TEMPLATE — COPY TO ADD NEW SECTION:
      
      <div class="divider"></div>
-     <section id="SECTION_ID" class="section">
-       <div class="reveal">
-         <p class="section-label">00X — LABEL</p>
-         <h2 class="section-title">Title <em>text.</em></h2>
-         YOUR CONTENT HERE
-       </div>
-     </section>
-     
-     Don't forget to add a nav link!
-     ============================================= -->
-
-</body>
-</html>
+     <section id="SECTI

@@ -92,7 +92,7 @@ body::after {
 .card:hover { border-color: rgba(200,164,78,0.35); transform: translateY(-2px); }
 .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); }
 
-.badge { display: inline-block; margin-top: 1rem; padding: 0.3rem 0.8rem; border: 1px solid var(--gold-dim); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+.badge { display: inline-block; margin-top: 1rem; padding: 0.3rem 0.8rem; border: 1px solid var(--gold); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); background: rgba(200,164,78,0.08); }
 
 .cta-btn { display: inline-block; padding: 0.8rem 2.5rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; font-weight: 400; transition: all 0.3s; }
 .cta-btn:hover { background: var(--gold); color: var(--black); }
@@ -129,9 +129,12 @@ nav.scrolled { background: rgba(5,5,5,0.97); backdrop-filter: blur(20px); -webki
 
 /* === AWARDS === */
 .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-.award-year { font-family: var(--serif); font-size: 2.5rem; font-weight: 300; color: var(--gold-dim); margin-bottom: 1rem; }
-.award-name { font-size: 1.1rem; font-weight: 400; color: var(--white); margin-bottom: 0.5rem; }
-.award-detail { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+.award-year { font-family: var(--serif); font-size: 2.5rem; font-weight: 300; color: var(--gold); margin-bottom: 1rem; }
+.award-name { font-size: 1.1rem; font-weight: 400; color: var(--gold-light); margin-bottom: 0.5rem; }
+.award-detail { font-size: 0.85rem; color: var(--gold-dim); line-height: 1.6; }
+.card { background: #000 !important; border: 1px solid rgba(200,164,78,0.35) !important; }
+.card::before { background: linear-gradient(to right, var(--gold), var(--gold-dim)) !important; }
+.card:hover { border-color: var(--gold) !important; box-shadow: 0 0 30px rgba(200,164,78,0.12); }
 
 /* === WATCH === */
 .watch-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
@@ -285,11 +288,12 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
         <div class="award-detail">Palma de Mallorca, Spain<br>Best Short Movie · 40 Jours en Enfer</div>
         <div class="badge">In Consideration</div>
       </div>
-      <div class="card">
+      <div class="card" style="text-align:center;">
+        <img src="OFFICIAL_SELECTION_-_AI_International_Film_Festival_-_2026__2_.png" alt="Official Selection — AI International Film Festival 2026" style="width:100%;max-width:280px;margin:0 auto 1.5rem;display:block;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(0.85);">
         <div class="award-year">2026</div>
         <div class="award-name">AI International Film Festival</div>
         <div class="award-detail">United States<br>Best AI Short Film · 40 Jours en Enfer</div>
-        <div class="badge">In Consideration</div>
+        <div class="badge">Official Selection ✦</div>
       </div>
       <div class="card">
         <div class="award-year">2026</div>
@@ -305,9 +309,9 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
       </div>
       <div class="card">
         <div class="award-year">2026</div>
-        <div class="award-name">VAF / Filmlab</div>
-        <div class="award-detail">Vlaams Audiovisueel Fonds<br>Development Support — Feature in Development</div>
-        <div class="badge">In Development</div>
+        <div class="award-name">AI Film Festival Japan</div>
+        <div class="award-detail">Tokyo, Japan · Generative AI Films<br>ALYS1NE — 40 Jours · Notification April 10, 2026</div>
+        <div class="badge">In Consideration</div>
       </div>
     </div>
   </div>
@@ -388,7 +392,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
       <div class="filmmaker-bio">
         <h3>Ronny Nollet</h3>
         <p class="filmmaker-role">Director · Editor · Creator of ALYS1NE</p>
-        <p>A filmmaker with over 35 years in post-production for broadcast television, documentary, and narrative film. Ronny has cut hundreds of hours of prime-time television across Belgium's major networks — VTM, VRT, Vier, Streamz — before turning his craft toward AI-driven cinema.</p>
+        <p>I've spent over 35 years in post-production for broadcast television, documentary, and narrative film. I've cut hundreds of hours of prime-time television across Belgium's major networks — VTM, VRT, Vier, Streamz — before turning my craft toward AI-driven cinema.</p>
         <p>ALYS1NE is not a technological experiment. It is the work of a seasoned editor who understands rhythm, tension, and the weight of a single frame — now wielding new tools to tell stories that could not exist otherwise.</p>
         <p>Based in Antwerp, Belgium. Working through Rest In Peace BV.</p>
         <div class="filmmaker-stats">

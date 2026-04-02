@@ -137,6 +137,18 @@ nav.scrolled { background: rgba(5,5,5,0.97); backdrop-filter: blur(20px); -webki
 .card:hover { border-color: var(--gold) !important; box-shadow: 0 0 30px rgba(200,164,78,0.12); }
 
 /* === WATCH === */
+.press-quote-block { max-width: 800px; margin: 0 auto; }
+.press-quote-text { font-family: var(--serif); font-size: clamp(1.1rem, 2.2vw, 1.45rem); font-style: italic; color: var(--gold-light); line-height: 1.8; margin-bottom: 2rem; border-left: 2px solid var(--gold-dim); padding-left: 2rem; }
+.press-attribution { display: flex; align-items: center; gap: 1.2rem; margin-top: 1.5rem; padding-left: 2rem; }
+.press-avatar { width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--gold-dim); object-fit: cover; }
+.press-author-info { display: flex; flex-direction: column; }
+.press-author-name { font-size: 1rem; font-weight: 400; color: var(--white); }
+.press-author-role { font-size: 0.75rem; letter-spacing: 0.1em; color: var(--gold-dim); margin-top: 0.15rem; }
+.press-source { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-top: 0.3rem; }
+.press-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.press-highlight { text-align: center; padding: 1.5rem; border: 1px solid rgba(200,164,78,0.1); background: rgba(200,164,78,0.02); }
+.press-highlight q { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--white); line-height: 1.6; }
+.press-highlight cite { display: block; margin-top: 0.8rem; font-size: 0.7rem; letter-spacing: 0.15em; color: var(--gold-dim); font-style: normal; text-transform: uppercase; }
 .watch-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
 .watch-grid.two-up { grid-template-columns: 1fr 1fr; }
 .video-embed { position: relative; width: 100%; padding-bottom: 56.25%; background: var(--surface); border: 1px solid rgba(200,164,78,0.1); overflow: hidden; }
@@ -224,6 +236,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#awards">Awards</a></li>
+    <li><a href="#press">Press</a></li>
     <li><a href="#watch">Watch</a></li>
     <li><a href="#filmmaker">Filmmaker</a></li>
     <li><a href="#partners">Partners</a></li>
@@ -320,11 +333,30 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
         <div class="award-detail">Best Short Psychological · 40 Jours en Enfer</div>
         <div class="badge">In Consideration</div>
       </div>
-      <div class="card">
+      <div class="card" style="text-align:center;">
+        <img src="OFFICIAL_SELECTION_-_AI_Film_Festival_Japan_-_2026.png" alt="Official Selection — AI Film Festival Japan 2026" style="width:100%;max-width:260px;margin:0 auto 1.5rem;display:block;">
         <div class="award-year">2026</div>
         <div class="award-name">AI Film Festival Japan</div>
-        <div class="award-detail">Tokyo, Japan · Generative AI Films<br>ALYS1NE — 40 Jours · Notification April 10, 2026</div>
+        <div class="award-detail">Tokyo, Japan · LOOP 2126 Short Film Competition<br>ALYS1NE — 40 Jours · Top 44 Shortlist</div>
+        <div class="badge">Nominee ✦</div>
+      </div>
+      <div class="card">
+        <div class="award-year">2026</div>
+        <div class="award-name">iShowcase Film Festival</div>
+        <div class="award-detail">Visionary Short Film Award<br>ALYS1NE — 40 Jours · Deadline August 1, 2026</div>
+        <div class="badge">Submitted</div>
+      </div>
+      <div class="card">
+        <div class="award-year">2026</div>
+        <div class="award-name">Short of the Week</div>
+        <div class="award-detail">Short Film<br>ALYS1NE — 40 Jours · Notification April 4, 2026</div>
         <div class="badge">In Consideration</div>
+      </div>
+      <div class="card">
+        <div class="award-year">2026</div>
+        <div class="award-name">British Urban Film Festival</div>
+        <div class="award-detail">London, United Kingdom<br>ALYS1NE — 40 Jours · Deadline April 30, 2026</div>
+        <div class="badge">Submitted</div>
       </div>
       <div class="card">
         <div class="award-year">2026</div>
@@ -343,6 +375,43 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.65rem; letter-spac
         <div class="award-name">Short to the Point</div>
         <div class="award-detail">40 Days in Hell · Notification January 25, 2027</div>
         <div class="badge">In Consideration</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================= PRESS ============================================= -->
+<div class="divider"></div>
+<section id="press" class="section">
+  <div class="reveal">
+    <p class="section-label">— Industry Response</p>
+    <h2 class="section-title">What they're <em>saying.</em></h2>
+    <div class="press-quote-block">
+      <div class="press-quote-text">
+        &ldquo;What makes this short film so strong is not only the aesthetics or the experiment with artificial intelligence. It's mainly the feeling in the character. The charged look. The vulnerability. The pent-up anger. The threat. You feel that no slick technological trick is being performed here, but a dark universe is being built in which trauma, power and survival become tangible.&rdquo;
+        <br><br>
+        &ldquo;The story has a jet black tint in it. An oppressive form of cinema that chafes, stings and lingers. That's exactly why I found it so intriguing. Because this film not only shows a world, but also makes an inner wound visible.&rdquo;
+      </div>
+      <div class="press-attribution">
+        <div class="press-author-info">
+          <span class="press-author-name">Bert van Thilborgh</span>
+          <span class="press-author-role">Trendwatcher, Futurist &amp; Innovation Specialist</span>
+          <span class="press-source">LinkedIn · April 2026</span>
+        </div>
+      </div>
+      <div class="press-highlights">
+        <div class="press-highlight">
+          <q>A dark universe in which trauma, power and survival become tangible.</q>
+          <cite>Bert van Thilborgh</cite>
+        </div>
+        <div class="press-highlight">
+          <q>It forces us to look more broadly at the future of film.</q>
+          <cite>Bert van Thilborgh</cite>
+        </div>
+        <div class="press-highlight">
+          <q>It is no longer just about technology, but about authorship, emotion and expressiveness.</q>
+          <cite>Bert van Thilborgh</cite>
+        </div>
       </div>
     </div>
   </div>

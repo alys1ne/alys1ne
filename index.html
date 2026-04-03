@@ -89,10 +89,10 @@ nav.scrolled { background: rgba(5,5,5,0.97); backdrop-filter: blur(20px); -webki
 .award-card { background: linear-gradient(180deg, rgba(255,255,255,0.015), transparent); border: 1px solid var(--border); padding: 24px 20px 20px; min-height: 380px; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; overflow: hidden; transition: border-color 0.4s, transform 0.4s; }
 .award-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 0 30px rgba(212,175,55,0.08); }
 .award-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); }
-.award-laurel-wrap { height: 180px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
-.award-laurel-wrap img { height: 160px; width: auto; max-width: 100%; object-fit: contain; }
+.award-laurel-wrap { height: 220px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.award-laurel-wrap img { height: 200px; width: auto; max-width: 100%; object-fit: contain; }
 .award-card:hover .award-laurel-wrap img { filter: brightness(1.1); }
-.award-no-laurel { height: 180px; margin-bottom: 16px; }
+.award-no-laurel { height: 220px; margin-bottom: 16px; }
 .award-year { font-family: var(--serif); font-size: 1.8rem; font-weight: 300; color: var(--gold); margin-bottom: 10px; }
 .award-name { font-size: 1.05rem; font-weight: 400; color: var(--text); margin-bottom: 8px; min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
 .award-detail { font-size: 0.95rem; color: var(--text-soft); line-height: 1.55; min-height: 3.6em; margin-bottom: 12px; }
@@ -218,9 +218,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#awards">Awards</a></li>
-    <li><a href="#press">Press</a></li>
     <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#press">Press</a></li>
+    <li><a href="#awards">Awards</a></li>
     <li><a href="#watch">Watch</a></li>
     <li><a href="#filmmaker">Filmmaker</a></li>
     <li><a href="#partners">Partners</a></li>
@@ -251,84 +251,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   </div>
 </section>
 
-<!-- AWARDS -->
-<div class="divider"></div>
-<section id="awards" class="section">
-  <div class="reveal">
-    <p class="section-label">002 — Recognition</p>
-    <h2 class="section-title">Awards & <em>Selections</em></h2>
-    <div class="awards-grid">
-      <div class="award-card">
-        <div class="award-laurel-wrap"><a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener"><img src="LAUREL_ONE-REELER_SHORT_FILM_COMPETITION.png" alt="Award of Excellence — One-Reeler"></a></div>
-        <div class="award-year">2026</div>
-        <div class="award-name">Award of Excellence</div>
-        <div class="award-detail">One-Reeler Short Film Competition<br>Los Angeles, USA</div>
-        <a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener" class="badge" style="text-decoration:none;">View Award →</a>
-      </div>
-      <div class="award-card">
-        <div class="award-laurel-wrap"><img src="LAUREL_AI_INTERNATIONAL_FILM_FESTIVAL.png" alt="Official Selection — AI International Film Festival"></div>
-        <div class="award-year">2026</div>
-        <div class="award-name">AI International Film Festival</div>
-        <div class="award-detail">United States<br>Best AI Short Film · 40 Jours en Enfer</div>
-        <div class="badge">Official Selection ✦</div>
-      </div>
-      <div class="award-card">
-        <div class="award-laurel-wrap"><img src="LAUREL_AI_MOVIE_AWARDS_SPAIN.png" alt="Official Selection — AI Movie Awards"></div>
-        <div class="award-year">2026</div>
-        <div class="award-name">AI Movie Awards</div>
-        <div class="award-detail">Palma de Mallorca, Spain<br>40 Jours en Enfer</div>
-        <div class="badge">Official Selection ✦</div>
-      </div>
-      <div class="award-card">
-        <div class="award-laurel-wrap"><img src="LAUREL_AI_FILM_FESTIVAL_JAPEN.png" alt="Nominee — AI Film Festival Japan"></div>
-        <div class="award-year">2026</div>
-        <div class="award-name">AI Film Festival Japan</div>
-        <div class="award-detail">Tokyo, Japan · LOOP 2126<br>Top 44 Shortlist</div>
-        <div class="badge">Nominee ✦</div>
-      </div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">VAF / Filmlab</div><div class="award-detail">Vlaams Audiovisueel Fonds<br>Development Support</div><div class="badge">In Development</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Venice Shorts</div><div class="award-detail">Venice, Italy<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cannes Indie Shorts Awards</div><div class="award-detail">Cannes, France<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Video Art & Experimental Film Festival</div><div class="award-detail">40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Rome AI Festival</div><div class="award-detail">Rome, Italy<br>Best AI Narrative Short Film</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cult Movies International Awards</div><div class="award-detail">Best Short Psychological<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">iShowcase Film Festival</div><div class="award-detail">Visionary Short Film Award<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Short of the Week</div><div class="award-detail">Short Film<br>ALYS1NE — 40 Jours</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">British Urban Film Festival</div><div class="award-detail">London, United Kingdom<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Bucharest Feminist Film Festival</div><div class="award-detail">Bucharest, Romania<br>40 Days in Hell</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2027</div><div class="award-name">Transilvania Shorts</div><div class="award-detail">International Short Film Festival<br>40 Days in Hell</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2027</div><div class="award-name">Short to the Point</div><div class="award-detail">40 Days in Hell</div><div class="badge">In Consideration</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PRESS -->
-<div class="divider"></div>
-<section id="press" class="section">
-  <div class="reveal">
-    <p class="section-label">— Industry Response</p>
-    <h2 class="section-title">What they're <em>saying.</em></h2>
-    <div class="press-quote-block">
-      <div class="press-quote-text">
-        &ldquo;What makes this short film so strong is not only the aesthetics or the experiment with artificial intelligence. It's mainly the feeling in the character. The charged look. The vulnerability. The pent-up anger. The threat. You feel that no slick technological trick is being performed here, but a dark universe is being built in which trauma, power and survival become tangible.&rdquo;
-        <br><br>
-        &ldquo;The story has a jet black tint in it. An oppressive form of cinema that chafes, stings and lingers. That's exactly why I found it so intriguing. Because this film not only shows a world, but also makes an inner wound visible.&rdquo;
-      </div>
-      <div class="press-attribution">
-        <div>
-          <span class="press-author-name">Bert van Thilborgh</span>
-          <span class="press-author-role" style="display:block;">Trendwatcher, Futurist &amp; Innovation Specialist</span>
-          <span class="press-source">LinkedIn · April 2026</span>
-        </div>
-      </div>
-      <div class="press-highlights">
-        <div class="press-highlight"><q>A dark universe in which trauma, power and survival become tangible.</q><cite>Bert van Thilborgh</cite></div>
-        <div class="press-highlight"><q>It forces us to look more broadly at the future of film.</q><cite>Bert van Thilborgh</cite></div>
-        <div class="press-highlight"><q>It is no longer just about technology, but about authorship, emotion and expressiveness.</q><cite>Bert van Thilborgh</cite></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- GALLERY -->
 <div class="divider"></div>
@@ -369,6 +291,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   </div>
 </section>
 
+
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" aria-label="Close">✕</button>
@@ -376,6 +299,87 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   <button class="lightbox-next" aria-label="Next">›</button>
   <img src="" alt="" id="lightbox-img">
 </div>
+
+
+<!-- PRESS -->
+<div class="divider"></div>
+<section id="press" class="section">
+  <div class="reveal">
+    <p class="section-label">— Industry Response</p>
+    <h2 class="section-title">What they're <em>saying.</em></h2>
+    <div class="press-quote-block">
+      <div class="press-quote-text">
+        &ldquo;What makes this short film so strong is not only the aesthetics or the experiment with artificial intelligence. It's mainly the feeling in the character. The charged look. The vulnerability. The pent-up anger. The threat. You feel that no slick technological trick is being performed here, but a dark universe is being built in which trauma, power and survival become tangible.&rdquo;
+        <br><br>
+        &ldquo;The story has a jet black tint in it. An oppressive form of cinema that chafes, stings and lingers. That's exactly why I found it so intriguing. Because this film not only shows a world, but also makes an inner wound visible.&rdquo;
+      </div>
+      <div class="press-attribution">
+        <div>
+          <span class="press-author-name">Bert van Thilborgh</span>
+          <span class="press-author-role" style="display:block;">Trendwatcher, Futurist &amp; Innovation Specialist</span>
+          <span class="press-source">LinkedIn · April 2026</span>
+        </div>
+      </div>
+      <div class="press-highlights">
+        <div class="press-highlight"><q>A dark universe in which trauma, power and survival become tangible.</q><cite>Bert van Thilborgh</cite></div>
+        <div class="press-highlight"><q>It forces us to look more broadly at the future of film.</q><cite>Bert van Thilborgh</cite></div>
+        <div class="press-highlight"><q>It is no longer just about technology, but about authorship, emotion and expressiveness.</q><cite>Bert van Thilborgh</cite></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- AWARDS -->
+<div class="divider"></div>
+<section id="awards" class="section">
+  <div class="reveal">
+    <p class="section-label">002 — Recognition</p>
+    <h2 class="section-title">Awards & <em>Selections</em></h2>
+    <div class="awards-grid">
+      <div class="award-card">
+        <div class="award-laurel-wrap"><a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener"><img src="LAUREL_ONE-REELER_SHORT_FILM_COMPETITION.png" alt="Award of Excellence — One-Reeler"></a></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">Award of Excellence</div>
+        <div class="award-detail">One-Reeler Short Film Competition<br>Los Angeles, USA</div>
+        <a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener" class="badge" style="text-decoration:none;">View Award →</a>
+      </div>
+      <div class="award-card">
+        <div class="award-laurel-wrap"><img src="LAUREL_AI_INTERNATIONAL_FILM_FESTIVAL.png" alt="Official Selection — AI International Film Festival"></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">AI International Film Festival</div>
+        <div class="award-detail">United States<br>Best AI Short Film · 40 Jours en Enfer</div>
+        <div class="badge">Official Selection ✦</div>
+      </div>
+      <div class="award-card">
+        <div class="award-laurel-wrap"><img src="LAUREL_AI_MOVIE_AWARDS_SPAIN.png" alt="Official Selection — AI Movie Awards"></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">AI Movie Awards</div>
+        <div class="award-detail">Palma de Mallorca, Spain<br>40 Jours en Enfer</div>
+        <div class="badge">Official Selection ✦</div>
+      </div>
+      <div class="award-card">
+        <div class="award-laurel-wrap"><img src="LAUREL_AI_FILM_FESTIVAL_JAPEN.png" alt="Nominee — AI Film Festival Japan"></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">AI Film Festival Japan</div>
+        <div class="award-detail">Tokyo, Japan · LOOP 2126<br>Top 44 Shortlist</div>
+        <div class="badge">Nominee ✦</div>
+      </div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Venice Shorts</div><div class="award-detail">Venice, Italy<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cannes Indie Shorts Awards</div><div class="award-detail">Cannes, France<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Video Art & Experimental Film Festival</div><div class="award-detail">40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Rome AI Festival</div><div class="award-detail">Rome, Italy<br>Best AI Narrative Short Film</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cult Movies International Awards</div><div class="award-detail">Best Short Psychological<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">iShowcase Film Festival</div><div class="award-detail">Visionary Short Film Award<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Short of the Week</div><div class="award-detail">Short Film<br>ALYS1NE — 40 Jours</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">British Urban Film Festival</div><div class="award-detail">London, United Kingdom<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Bucharest Feminist Film Festival</div><div class="award-detail">Bucharest, Romania<br>40 Days in Hell</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2027</div><div class="award-name">Transilvania Shorts</div><div class="award-detail">International Short Film Festival<br>40 Days in Hell</div><div class="badge">In Consideration</div></div>
+      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2027</div><div class="award-name">Short to the Point</div><div class="award-detail">40 Days in Hell</div><div class="badge">In Consideration</div></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- WATCH -->
 <div class="divider"></div>
@@ -407,6 +411,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   </div>
 </section>
 
+
 <!-- FILMMAKER -->
 <div class="divider"></div>
 <section id="filmmaker" class="section">
@@ -435,6 +440,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
     </div>
   </div>
 </section>
+
 
 <!-- PARTNERS -->
 <div class="divider"></div>
@@ -467,6 +473,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
   </div>
 </section>
 
+
 <!-- CONTACT -->
 <div class="divider"></div>
 <section id="contact" class="section">
@@ -486,7 +493,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
         </div>
       </div>
       <div class="contact-legal">
-        <p>ALYS1NE is a project by Rest In Peace BV, an independent production company based in Antwerp, Belgium. The project is in active development with support from the Flemish Audiovisual Fund (VAF/Filmlab).</p>
+        <p>ALYS1NE is a project by Rest In Peace BV, an independent production company based in Antwerp, Belgium.</p>
         <p class="company">Rest In Peace BV · BE 0832 919 006 · Antwerp, Belgium</p>
       </div>
     </div>

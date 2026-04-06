@@ -506,7 +506,12 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   const lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img');
   let imgs=[],idx=0;
   function open(a,i){imgs=a;idx=i;img.src=imgs[idx];lb.classList.add('active');document.body.style.overflow='hidden';}
-  function close(){lb.classList.remove('active');document.body.style.overflm').addEventListener('click',()=>open(srcs,i)));
+  function close(){lb.classList.remove('active');document.body.style.overflow='';}
+  function go(d){idx=(idx+d+imgs.length)%imgs.length;img.src=imgs[idx];}
+  document.querySelectorAll('.gallery-grid').forEach(g=>{
+    const items=g.querySelectorAll('.gallery-item img');
+    const srcs=Array.from(items).map(i=>i.src);
+    items.forEach((im,i)=>im.closest('.gallery-item').addEventListener('click',()=>open(srcs,i)));
   });
   lb.querySelector('.lightbox-close').addEventListener('click',close);
   lb.querySelector('.lightbox-prev').addEventListener('click',()=>go(-1));

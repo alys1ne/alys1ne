@@ -461,7 +461,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
         <li>Filmmakers, artists and creators interested in meaningful collaborations</li>
       </ul>
       <p class="cta-tagline">This is not content production. This is worldbuilding.</p>
-      <a href="/cdn-cgi/l/email-protection#89fbe6e7e7f0e7e6e5e5ecfdc9e0eae5e6fceda7eae6e4" class="cta-btn">Get in Touch</a>
+      <a href="/cdn-cgi/l/email-protection#70021f1e1e091e1f1c1c15043019131c1f05145e131f1d" class="cta-btn">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -475,7 +475,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
     <div class="contact-content">
       <div class="contact-info">
         <h3>Ronny Nollet</h3>
-        <div class="contact-line"><span class="contact-label">Email</span><span class="contact-value"><a href="/cdn-cgi/l/email-protection#21534e4f4f584f4e4d4d44556148424d4e54450f424e4c"><span class="__cf_email__" data-cfemail="8bf9e4e5e5f2e5e4e7e7eeffcbe2e8e7e4feefa5e8e4e6">[email&#160;protected]</span></a></span></div>
+        <div class="contact-line"><span class="contact-label">Email</span><span class="contact-value"><a href="/cdn-cgi/l/email-protection#3f4d50515146515053535a4b7f565c53504a5b115c5052"><span class="__cf_email__" data-cfemail="35475a5b5b4c5b5a59595041755c56595a40511b565a58">[email&#160;protected]</span></a></span></div>
         <div class="contact-line"><span class="contact-label">Phone</span><span class="contact-value"><a href="tel:+32475451473">+32 475 45 14 73</a></span></div>
         <div class="contact-line"><span class="contact-label">Location</span><span class="contact-value">Antwerp, Belgium</span></div>
         <div class="contact-socials">
@@ -506,15 +506,17 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   const lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img');
   let imgs=[],idx=0;
   function open(a,i){imgs=a;idx=i;img.src=imgs[idx];lb.classList.add('active');document.body.style.overflow='hidden';}
-  function close(){lb.classList.remove('active');document.body.style.overflow='';}
-  function go(d){idx=(idx+d+imgs.length)%imgs.length;img.src=imgs[idx];}
-  document.querySelectorAll('.gallery-grid').forEach(g=>{
-    const items=g.querySelectorAll('.gallery-item img');
-    const srcs=Array.from(items).map(i=>i.src);
-    items.forEach((im,i)=>im.closest('.gallery-item').addEventListener('click',()=>open(srcs,i)));
+  function close(){lb.classList.remove('active');document.body.style.overflm').addEventListener('click',()=>open(srcs,i)));
   });
   lb.querySelector('.lightbox-close').addEventListener('click',close);
   lb.querySelector('.lightbox-prev').addEventListener('click',()=>go(-1));
   lb.querySelector('.lightbox-next').addEventListener('click',()=>go(1));
   lb.addEventListener('click',e=>{if(e.target===lb)close();});
-  document.addEventListener('keydown',e=>{if(!lb.classList.contains('active'))return;if(e.key==='Escape')close()
+  document.addEventListener('keydown',e=>{if(!lb.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+  let tx=0;
+  lb.addEventListener('touchstart',e=>{tx=e.changedTouches[0].screenX;});
+  lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].screenX-tx;if(Math.abs(d)>50)go(d>0?-1:1);});
+})();
+</script>
+</body>
+</html>

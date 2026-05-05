@@ -84,13 +84,13 @@ nav.scrolled { background: rgba(5,5,5,0.97); backdrop-filter: blur(20px); -webki
 .about-text strong { color: var(--text); font-weight: 400; }
 .about-quote { margin: 3rem 0; padding: 2rem 0 2rem 2rem; border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 1.4rem; font-style: italic; color: var(--text); line-height: 1.6; max-width: 600px; }
 
-/* === AWARDS 4-COL === */
-.awards-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
-.award-card { background: linear-gradient(180deg, rgba(255,255,255,0.015), transparent); border: 1px solid var(--border); padding: 24px 20px 20px; min-height: 380px; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; overflow: hidden; transition: border-color 0.4s, transform 0.4s; }
+/* === AWARDS 5-COL === */
+.awards-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+.award-card { background: linear-gradient(180deg, rgba(255,255,255,0.015), transparent); border: 1px solid var(--border); padding: 24px 18px 20px; min-height: 380px; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; overflow: hidden; transition: border-color 0.4s, transform 0.4s; }
 .award-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 0 30px rgba(212,175,55,0.08); }
 .award-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); }
 .award-laurel-wrap { height: 224px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
-.award-laurel-wrap img { max-height: 184px; max-width: 100%; object-fit: contain; }
+.award-laurel-wrap img { max-height: 220px; max-width: 100%; object-fit: contain; }
 .award-no-laurel { height: 224px; margin-bottom: 16px; }
 .award-year { font-family: var(--serif); font-size: 1.8rem; font-weight: 300; color: var(--gold); margin-bottom: 10px; }
 .award-name { font-size: 1.05rem; font-weight: 400; color: var(--text); margin-bottom: 8px; min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
@@ -192,6 +192,7 @@ footer { padding: 2rem 3rem; text-align: center; font-size: 0.85rem; letter-spac
 @keyframes scrollPulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
 
+@media (max-width: 1400px) { .awards-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 1200px) { .awards-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 860px) { .awards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 768px) {
@@ -258,18 +259,32 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
     <h2 class="section-title">Awards & <em>Selections</em></h2>
     <div class="awards-grid">
       <div class="award-card">
-        <div class="award-laurel-wrap"><a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener"><img src="LAUREL_ONE-REELER_SHORT_FILM_COMPETITION.png" alt="Award of Excellence — One-Reeler"></a></div>
+        <div class="award-laurel-wrap"><a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener"><img src="LAUREL_ONE_REELER.png" alt="Award of Excellence — One-Reeler"></a></div>
         <div class="award-year">2026</div>
         <div class="award-name">Award of Excellence</div>
         <div class="award-detail">One-Reeler Short Film Competition<br>Los Angeles, USA</div>
         <a href="https://www.one-reeler.net/award-of-excellence-alys1ne-40-jours-belgium/" target="_blank" rel="noopener" class="badge" style="text-decoration:none;">View Award →</a>
       </div>
       <div class="award-card">
-        <div class="award-laurel-wrap"><img src="LAUREL_AI_INTERNATIONAL_FILM_FESTIVAL.png" alt="Official Selection — AI International Film Festival"></div>
+        <div class="award-laurel-wrap"><img src="LAUREL_AI_INTERNATIONAL.png" alt="Best Foreign AI Short — AI International Film Festival"></div>
         <div class="award-year">2026</div>
-        <div class="award-name">AI International Film Festival</div>
-        <div class="award-detail">United States<br>Best AI Short Film · 40 Jours en Enfer</div>
-        <div class="badge">Official Selection ✦</div>
+        <div class="award-name">Best Foreign AI Short</div>
+        <div class="award-detail">AI International Film Festival<br>Hollywood, USA</div>
+        <div class="badge">Winner ✦</div>
+      </div>
+      <div class="award-card">
+        <div class="award-laurel-wrap"><img src="LAUREL_CULT_MOVIES.png" alt="Best Short Psychological — Cult Movies International Awards"></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">Best Short Psychological</div>
+        <div class="award-detail">Cult Movies International Awards<br>40 Jours en Enfer</div>
+        <div class="badge">Winner ✦</div>
+      </div>
+      <div class="award-card">
+        <div class="award-laurel-wrap"><img src="LAUREL_AI_FILM_FESTIVAL_JAPAN.png" alt="Honorable Mention — AI Film Festival Japan"></div>
+        <div class="award-year">2026</div>
+        <div class="award-name">AI Film Festival Japan</div>
+        <div class="award-detail">Tokyo, Japan<br>40 Jours en Enfer</div>
+        <div class="badge">Honorable Mention ✦</div>
       </div>
       <div class="award-card">
         <div class="award-laurel-wrap"><img src="LAUREL_AI_MOVIE_AWARDS_SPAIN.png" alt="Official Selection — AI Movie Awards"></div>
@@ -278,19 +293,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--gold-light); ou
         <div class="award-detail">Palma de Mallorca, Spain<br>40 Jours en Enfer</div>
         <div class="badge">Official Selection ✦</div>
       </div>
-      <div class="award-card">
-        <div class="award-laurel-wrap"><img src="LAUREL_AI_FILM_FESTIVAL_JAPEN.png" alt="Nominee — AI Film Festival Japan"></div>
-        <div class="award-year">2026</div>
-        <div class="award-name">AI Film Festival Japan</div>
-        <div class="award-detail">Tokyo, Japan · LOOP 2126<br>Top 44 Shortlist</div>
-        <div class="badge">Nominee ✦</div>
-      </div>
 
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Venice Shorts</div><div class="award-detail">Venice, Italy<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cannes Indie Shorts Awards</div><div class="award-detail">Cannes, France<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Video Art & Experimental Film Festival</div><div class="award-detail">40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Rome AI Festival</div><div class="award-detail">Rome, Italy<br>Best AI Narrative Short Film</div><div class="badge">In Consideration</div></div>
-      <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Cult Movies International Awards</div><div class="award-detail">Best Short Psychological<br>40 Jours en Enfer</div><div class="badge">In Consideration</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">iShowcase Film Festival</div><div class="award-detail">Visionary Short Film Award<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">Short of the Week</div><div class="award-detail">Short Film<br>ALYS1NE — 40 Jours</div><div class="badge">In Consideration</div></div>
       <div class="award-card"><div class="award-no-laurel"></div><div class="award-year">2026</div><div class="award-name">British Urban Film Festival</div><div class="award-detail">London, United Kingdom<br>ALYS1NE — 40 Jours</div><div class="badge">Submitted</div></div>
